@@ -29,7 +29,7 @@ class Category(models.Model):
 
 
 class Company(models.Model):
-    name = models.CharField()
+    name = models.CharField(max_length=300)
     description = models.TextField()
     city = models.CharField(max_length=300)
     address = models.TextField()

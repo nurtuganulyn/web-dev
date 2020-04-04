@@ -15,9 +15,15 @@ def company_single(request, company_id):
 
 
 def vacancy_list_by_company(request, company_id):
-    vacancies = Vacancy.objects.all(id=company_id)
-    vacancies_json = [vacancy.to_json() for vacancy in vacancies]
-    return JsonResponse(vacancies_json, safe=False)
+    if request.method == 'GET':
+        try:
+            vacancies = Vacancy.objects.filter(company_id=company_id)
+            vacancies_json = [vacancy.to_json() for vacancy in vacancies]
+            return JsonResponse(vacancies_json, safe=False)
+        except Exception as e:
+            return JsonResponse({'error': str(e)})
+    elif request.method == 'POST':
+        pass
 
 
 def vacancy_list(request):
@@ -33,6 +39,6 @@ def vacancy_by_id(request, vacancy_id):
 
 
 def top_ten(request):
-    vacancies = Vacancy.objects.all()[:10]
-    vacancies_json = [vacancy.to_json() for vacancy in vacancies]
+    vacancies = Vacancy.objects.all().order_by('-salary')
+    vacancies_json = [v.to_json() for v in vacancies[:10]]
     return JsonResponse(vacancies_json, safe=False)
