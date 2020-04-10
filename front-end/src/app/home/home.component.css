@@ -1,0 +1,14 @@
+.img2 {
+    min-height: 100vh;
+    width: 100%;
+    background: url('https://b2blogger.com/pressroom/upload_images/apple-iphone-11-water-resistant-091019-1568284086.jpg');
+    -webkit-background-size: cover;
+    margin-left: 10%;
+}
+.img1 {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('https://fora.kz/images/content/actions/skidki-na-smartfony-samsung_5afe81e1e518e.jpg');
+    -webkit-background-size: cover;
+    margin-left: 10%;
+}
