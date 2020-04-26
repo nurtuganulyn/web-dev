@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db" uuid="fe011095-e28b-4673-864b-0033f00ad2f2">
+    <data-source source="LOCAL" name="db" uuid="1eaddbf4-970a-47c7-befc-74f200ec29c3">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\nurtu\web-dev\week11\hhback\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\nurtu\Desktop\Lab10\hh_b\db.sqlite3</jdbc-url>
       <libraries>
         <library>
           <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/license.txt</url>
@@ -15,13 +15,19 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="Django default" uuid="4f9888c9-60fd-4fce-b34f-4c60d45b4a6a">
+    <data-source source="LOCAL" name="db [2]" uuid="a6e7a4e0-257c-4d03-b35b-f158f814ef27">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
-      <imported>true</imported>
-      <remarks>$PROJECT_DIR$/hhback/settings.py</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\nurtu\web-dev\week11\hhback\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\nurtu\Desktop\Lab10\hh_b\db.sqlite3</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/Xerial SQLiteJDBC/3.25.1/sqlite-jdbc-3.25.1.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>
