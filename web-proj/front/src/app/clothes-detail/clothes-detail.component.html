@@ -1,0 +1,19 @@
+<div *ngFor = "let clothes of clothesList">
+    <div *ngIf = "selectedClothesId == clothes.id" class= "clothesItem">
+
+        <div class="zoomBOut">
+          <img [src]="clothes.imageLink1" class = "clothesImage">
+        </div>
+        <nav ><h2 class="text" id="name">{{clothes.name}}</h2>
+        <p id="price" class="text">
+            {{clothes.price}} тнг.
+        </p>
+        <p class="text">
+            {{clothes.description}}
+            </p>
+        <button (click)= "onAddToCart(clothes)" id="card">ДОБАВИТЬ В КОРЗИНУ</button>
+        </nav>
+        <div class="zoomBOut"><img [src]="clothes.imageLink2" class = "clothesImage"></div>
+        <div class="zoomBOut"><img [src]="clothes.imageLink1" class = "clothesImage"></div>
+    </div>
+</div>

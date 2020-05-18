@@ -1,0 +1,21 @@
+<div  method="post" class="container"  >
+
+  <div class="container col-4">
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required [(ngModel)]="login">
+
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required [(ngModel)]="password">
+
+    <button type="submit" (click)="logIn()">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <p class="message">Not registered? <a routerLink="./new">Созадть аккаунт</a></p>
+  </div>
+
+  <div class="container col-4" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn" (click)="goBack()">Cancel</button>
+    <span class="psw">Забили <a href="#">пароль?</a></span>
+  </div>
+</div>
